@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ</title>
+        <link rel="stylesheet" href="FAQ.css">
+        <link rel="icon" href="favicon.png" type="image/png">
+    </head>
+    <body>
+
+        <div class="banner">
+              <div class="navbar">
+                  <a href="index.html"><img src="logo.png" class="logo"></a>
+                  <ul>
+              <li><a href="index.html" onclick="playAudio()">Home</a></li>
+              <li><a href="services.html" onclick="playAudio()">Services</a></li>
+              <li><a href="faq.html" onclick="playAudio()">FAQ</a></li>
+              <li><a href="Find us.html" onclick="playAudio()">Find Us</a></li>
+              <li><a href="gallery.html" onclick="playAudio()">Gallery</a></li>
+              <li><a href="Free Quote.html" onclick="playAudio()">Free Quote</a></li>
+          </ul>
+      </div>
+    <body>
+        <ul class= "accordion">
+            <li>
+                <input type="radio" name="accordion" id="first" checked>
+                <label for="first">How much does pressure washing service cost?</label>
+                <div class="content">
+                    <P>A: Other power washing companies in Ireland typically charge based on square meters.
+                        The pricing may vary depending on the specific requirements of the job, such as cleaning a tarmac driveway
+                       or re-sanding brick pavers, which could result in higher costs. Expect rates in the range of around €5 per square meter.
+                       Our pricing structure follows a similar model, ranging from €2.5 to €6 euro per square meter, with adjustments based on the size of the area being serviced.
+                        Larger areas result in a lower price per square meter, while smaller areas incur a higher price per square meter.</P>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">Do I need to provide something?</label>
+                <div class="content">
+                    <P>A: The power washing machine requires running water. Also, the area you wish to be cleaned needs to have proper drainage.</P>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">What surfaces can be cleaned with pressure washing?</label>
+                <div class="content">
+                    <P>A: Plastic, tiles, concrete, stone, metal, wood: pretty much anything solid and sturdy enough. </P>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">What’s the difference between commercial/industrial and domestic/residential power wash?</label>
+                <div class="content">
+                    <P>A: Commercial/industrial power washing is geared towards larger scale cleaning of industrial facilities 
+                        and surfaces using heavy-duty equipment and specialized detergents. Residential power washing focuses
+                         on smaller areas around homes, utilizing lighter equipment and gentler cleaning solutions. </P>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">How long does the service take?</label>
+                <div class="content">
+                    <P>A: This is not an hourly-based service. It all depends on the dimensions of the area that is being washed. </P>
+                </div>
+
+            </li>
+
+
+        
+        </ul>
+<!-- Footer -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<footer class="footer">
+    <div class="footer-content">
+        
+        <div class="footer-section about">
+            <img src="logofooter.png" alt="Your Company Logo" class="footer-logo">
+            <h2>About Us</h2>
+            <p>Welcome to AquaWash, your top choice for professional pressure washing in Ireland. With our skilled team and eco-friendly solutions, we guarantee exceptional results that exceed your expectations. Trust us for reliable and efficient service that leaves your property sparkling clean.</p>
+            <div class="contact">
+                <span><i class="fa-brands fa-whatsapp"></i> &nbsp; 083 033 0240</span>
+                <span><i class="fas fa-envelope"></i> &nbsp; AquaWashDublin@gmail.com</span>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=61555416609226"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/aquawashdublin/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@AquaWashDublin"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+       <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="Find us.html">Find Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Free Quote.html">Free Quote</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section contact-form">
+            <h2>Contact Us</h2>
+            <br>
+            <form id="contactForm">
+                <div class="input-container">
+                    <input type="email" id="emailInput" required class="email text-input contact-input" placeholder="Your email address">
+                </div>
+                <div class="input-container">
+                    <textarea id="messageInput" name="message" required class="text-input contact-input" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit"><i class="fa-solid fa-envelope"></i> Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        &copy; 2024 AquaWash | Designed by Your Company
+    </div>
+</footer>
+<!-- End of Footer -->
+
+
+<!-- Add your scripts here -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    function emailSend(email, message) {
+        var messageBody = "Email: " + email + "\nMessage: " + message;
+
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "jeremikubica002@gmail.com",
+            Password: "84954B491E37DE8FA7CD1515A15B32D10D2E",
+            To: 'aquawashdublin@gmail.com',
+            From: "jeremikubica002@gmail.com",
+            Subject: "Contact Form Submission",
+            Body: messageBody
+        }).then(function (message) {
+            if (message === 'OK') {
+                Swal.fire("Success", "Email sent successfully!", "success").then(function (result) {
+                    if (result.isConfirmed) {
+                        window.location.href = "index.html"; // Redirect to the home page
+                    }
+                });
+            } else {
+                console.error("Error:", message);
+                Swal.fire("Error", "Failed to send email.", "error");
+            }
+        }).catch(function (error) {
+            console.error("Error:", error);
+            Swal.fire("Error", "Failed to send email.", "error");
+        });
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+        var email = document.getElementById('emailInput').value;
+        var message = document.getElementById('messageInput').value;
+        emailSend(email, message); // Call the emailSend function with email and message
+    });
+</script>
+
+
+
+    </body>
+</html>

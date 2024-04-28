@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+}
+html,boddy{
+    height: 100%;
+}
+/* Banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: repeating-linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('background.jpg');
+    background-size: cover;
+    background-position: center; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: calc(15% - 15px); 
+    width: 25%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.navbar ul li a { 
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+/* Banner end */
+
+/* Content */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    background: #009688;
+    border-color: transparent;
+}
+/* Content End */
+
+/* FOOTER */
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content{
+    border: 0px solid red;
+    height: 355px;
+    display: flex;
+  
+}
+
+.footer-logo {
+    width: 40%;  
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+    color: white;
+    text-align: center;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    margin: 10px;
+}
+
+}
+
+.footer .footer-content .about .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-content .about .socials a {
+    border: 3px solid gray;
+    border-radius: 10%;
+    width: 46px; 
+    height: 46px; 
+    padding: 10px; 
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .about .socials a i {
+    font-size: 1.5em;
+    color: gray; 
+}
+
+.footer .footer-content .links ul {
+    margin-left: 20px; 
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.footer .footer-content .about .socials a:hover {
+    border: 3px solid white;
+    color: white;
+    transition: color 0.3s, border 0.3s;
+}
+
+.footer .footer-content .links {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer .footer-content .links ul a {
+    color: gray; 
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white; 
+    margin-left: 15px;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+.footer .footer-content .contact-form .input-container {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .contact-form .contact-input {
+    background: #272727;
+    color: #bebdbd;
+    line-height: 1.5rem;
+    padding: .7rem 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer .footer-content .contact-form textarea {
+    height: 100px; 
+}
+
+.footer .footer-content .contact-form .contact-input:focus{
+    background: #1a1a1a;
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+/* Footer End */
